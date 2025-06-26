@@ -2,9 +2,6 @@ import './ChatEntry.css';
 import TimeStamp from './TimeStamp';
 import PropTypes from 'prop-types';
 
-// The ChatEntry component should use an instance of the TimeStamp component.
-// The TimeStamp component expects one prop: time.
-
 const ChatEntry = (props) => {
   const heart = props.liked ? '❤️' : '🤍';
 
@@ -25,7 +22,6 @@ const ChatEntry = (props) => {
 };
 
 ChatEntry.propTypes = {
-  // Fill with correct proptypes
   id: PropTypes.number.isRequired,
   sender: PropTypes.string.isRequired,
   body: PropTypes.string.isRequired,
